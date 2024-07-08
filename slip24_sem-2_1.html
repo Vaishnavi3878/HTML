@@ -1,0 +1,29 @@
+<html>
+<body>
+<form>
+Enter No:<br>
+<input type="number" id="t1"><br>
+Sum of Odd Nos:<br>
+<input type="number" id="t2"><br>
+<input type="button" value="OK" onclick="digitsum()">
+</form>
+</body>
+</html>
+
+<script>
+function digitsum()
+{
+var n=document.getElementById("t1").value;
+var s=0;
+while(n>0)
+{
+d=n%10;
+if(d%2!=0)
+{
+s=s+d;
+}
+n=parseInt(n/10);
+}
+document.getElementById("t2").value=s;
+}
+</script>

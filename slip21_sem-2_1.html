@@ -1,0 +1,27 @@
+<html>
+<body>
+<form>
+Enter Value of X:<br>
+<input type="number" id="t1"><br>
+Enter value of Y:<br>
+<input type="number" id="t2"><br>
+x<sup>y</sup>:<br>
+<input type="number" id="t3"><br>
+<input type="button" value="OK" onclick="pow()">
+</form>
+</body>
+</html>
+
+<script>
+function pow()
+{
+var x=document.getElementById("t1").value;
+var y=document.getElementById("t2").value;
+var pow=1;
+for(i=1;i<=y;i++)
+{
+pow=pow*x;
+}
+document.getElementById("t3").value=pow;
+}
+</script>

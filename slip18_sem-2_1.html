@@ -1,0 +1,21 @@
+<html>
+<body>
+Enter Number:<br>
+<input type="number" id="t1"><br>
+<input type="button" value="OK" onclick="odd()">
+</form>
+</body>
+</html>
+
+<script>
+function odd()
+{
+var n=document.getElementById("t1").value;
+document.write("Odd Numbers=<br>");
+for(i=1;i<=n;i++)
+{
+if(i%2==0)
+document.write(i+"<br>");
+}
+}
+</script>

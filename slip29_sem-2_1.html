@@ -1,0 +1,33 @@
+<html>
+<body>
+<form>
+Enter No1:<br>
+<input type="number" id="t1"><br>
+Enter No2:<br>
+<input type="number" id="t2"><br>
+Enter No3:<br>
+<input type="number" id="t3"><br>
+Large No:<br>
+<input type="number" id="t4"><br>
+<input type="button" value="OK" onclick="large()">
+</form>
+</body>
+</html>
+
+<script>
+function large()
+{
+var n1=document.getElementById("t1").value;
+var n2=document.getElementById("t2").value;
+var n3=document.getElementById("t3").value;
+n1=parseInt(n1);
+n2=parseInt(n2);
+n3=parseInt(n3);
+if(n1>n2 && n1>n3)
+document.getElementById("t4").value=n1;
+else if(n2>n1 && n2>n3)
+document.getElementById("t4").value=n2;
+else
+document.getElementById("t4").value=n3;
+}
+</script>

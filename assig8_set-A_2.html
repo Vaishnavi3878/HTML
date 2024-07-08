@@ -1,0 +1,27 @@
+<html>
+<body>
+<form>
+Enter Number:
+<input type="text" id="t1"><br>
+Sum of Digit:
+<input type="text" id="t2"><br>
+<input type="button" value="ok" onclick="digitsum()">
+</form>
+</body>
+</html>
+
+<script>
+function digitsum()
+{
+var n=document.getElementById("t1").value;
+n=parseInt(n);
+var s=0;
+while(n>0)
+{
+d=n%10;
+s=s+d;
+n=parseInt(n/10);
+}
+document.getElementById("t2").value=s;
+}
+</script>

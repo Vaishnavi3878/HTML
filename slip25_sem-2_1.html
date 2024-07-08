@@ -1,0 +1,26 @@
+<html>
+<body>
+<form>
+Enter No:<br>
+<input type="number" id="t1"><br>
+Reverse No:<br>
+<input type="number" id="t2"><br>
+<input type="button" value="OK" onclick="rev()">
+</form>
+</body>
+</html>
+
+<script>
+function rev()
+{
+var n=document.getElementById("t1").value;
+rev=0;
+while(n>0)
+{
+d=n%10;
+rev=rev*10+d;
+n=parseInt(n/10);
+}
+document.getElementById("t2").value=rev;
+}
+</script>

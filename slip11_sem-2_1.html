@@ -1,0 +1,21 @@
+<html>
+<body>
+<form>
+Enter string:<br>
+<input type="text" id="t1"><br>
+Enter Position:</br>
+<input type="number" id="t2"><br>
+<input type="button" value="Print" onclick="show()">
+</form>
+</body>
+</html>
+
+<script>
+function show()
+{
+var s=document.getElementById("t1").value;
+var p=document.getElementById("t2").value;
+p=parseInt(p);
+document.write("character="+s.charAt(p));
+}
+</script>

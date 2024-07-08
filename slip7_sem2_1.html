@@ -1,0 +1,24 @@
+<html>
+<body>
+<form>
+Enter string:<br>
+<input type="text" id="t1"><br>
+<input type="button" value="calculate" onclick="vowels()">
+</form>
+</body>
+</html>
+
+<script>
+function vowels()
+{
+var cnt=0;
+var s1=document.getElementById("t1").value;
+for(i=0;i<s1.length;i++)
+{
+if(s1.charAt(i)=='A'||s1.charAt(i)=='a'||s1.charAt(i)=='E'||s1.charAt=='e'||s1.charAt(i)=='I'||s1.charAt(i)=='i'||s1.charAt(i)=='O'||s1.charAt(i)=='o'||s1.charAt(i)=='U'||s1.charAt(i)=='u')
+cnt++;
+}
+document.write("Vowel count="+cnt);
+}
+</script>
+ 

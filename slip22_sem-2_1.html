@@ -1,0 +1,24 @@
+<html>
+<body>
+<form>
+Enter String:<br>
+<input type="text" id="t1"><br>
+Length:<br>
+<input type="number" id="t2"><br>
+<input type="button" value="OK" onclick="disp()">
+</form>
+</body>
+</html>
+
+<script>
+function disp()
+{
+var s1=document.getElementById("t1").value;
+var l=0;
+for(i=0;i<s1.length;i++)
+{
+l++;
+}
+document.getElementById("t2").value=l;
+}
+</script>

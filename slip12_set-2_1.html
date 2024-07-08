@@ -1,0 +1,55 @@
+<html>
+<body>
+<form>
+Enter Name:<br>
+<input type="text" id="t1"><br>
+Enter Address:<br>
+<input type="text" id="t2"><br>
+Enter city:<br>
+<input type="text" id="t3"><br>
+Enter Pin-Code:<br>
+<input type="number" id="t4"><br>
+<input type="button" value="OK" onclick="disp()">
+</form>
+</body>
+</html>
+
+<script>
+function disp()
+{
+var s1=document.getElementById("t1").value;
+var s2=document.getElementById("t2").value;
+var s3=document.getElementById("t3").value;
+var s4=document.getElementById("t4").value;
+flag=0;
+if(s1.length==0)
+{
+alert("Name is not empty.........");
+flag=1;
+}
+for(i=0;i<s1.length;i++)
+{
+if(s1.charAt(i)>='A'&&s1.charAt(i)<='Z'||s1.charAt(i)>='a'&&s1.charAt(i)<='z')
+{
+flag=0;
+}
+else
+{
+alert("Name contain alphabets only.................");
+flag=1;
+}
+}
+if(s4.length!=6)
+{
+alert("Pin-Code length must be 6 digit only...................");
+flag=1;
+}
+if(flag==0)
+{
+document.write("Name="+s1+"<br>");
+document.write("Address="+s2+"<br>");
+document.write("City="+s3+"<br>");
+document.write("Pin-Code="+s4);
+}
+}
+</script>

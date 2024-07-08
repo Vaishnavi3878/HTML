@@ -1,0 +1,24 @@
+<html>
+<body>
+<form>
+Enter Number:<br>
+<input type="number" id="t1"><br>
+<input type="button" value="OK" onclick="fact()">
+</form>
+</body>
+</html>
+
+<script>
+function fact()
+{
+var n=document.getElementById("t1").value;
+var a=new Array();
+n=parseInt(n);
+for(i=1;i<n;i++)
+{
+if(n%i==0)
+a.push(i);
+}
+document.write("Factors="+a);
+}
+</script>

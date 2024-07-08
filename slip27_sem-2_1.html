@@ -1,0 +1,24 @@
+<html>
+<body>
+<form>
+Enter No:<br>
+<input type="number" id="t1"><br>
+Sum of Factors:<br>
+<input type="number" id="t2"><br>
+<input type="button" value="OK" onclick="fact()">
+</form>
+</body>
+</html>
+
+<script>
+function fact()
+{
+var n=document.getElementById("t1").value,s=0,i;
+for(i=1;i<n;i++)
+{
+if(n%i==0)
+s=s+i;
+}
+document.getElementById("t2").value=s;
+}
+</script>
