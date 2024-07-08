@@ -1,0 +1,16 @@
+<script>
+var s=0;
+var n=prompt("Enter Limit:");
+n=parseInt(n);
+var a=new Array();
+for(i=0;i<n;i++)
+{
+a[i]=prompt("Enter Number:");
+}
+document.write("Array Elements:"+a);
+for(i=0;i<n;i++)
+{
+s=s+parseInt(a[i]);
+}
+document.write("<br>Sum="+s);
+</script>

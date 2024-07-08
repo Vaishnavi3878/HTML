@@ -1,0 +1,16 @@
+<script>
+var flag=confirm("Are You Sure?");
+if(flag==true)
+{
+var s1=prompt("Enter Number:");
+var n=parseInt(s1);
+var s=0;
+while(n>0)
+{
+d=n%10;
+s=s+d;
+n=parseInt(n/10);
+}
+alert("Sum of digit="+s);
+}
+</script>

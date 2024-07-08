@@ -1,0 +1,22 @@
+<html>
+<body>
+<h1>Input radius and get Volume of Spare</h1>
+<form>
+Radius:
+<input type="text" id="t1"><br>
+volume:
+<input type="text" id="t2"><br>
+<input type="button" value="Calculate" onclick="volume()">
+</form>
+</body>
+</html>
+
+<script>
+function volume()
+{
+var r=document.getElementById("t1").value;
+r=parseFloat(r);
+var v=4/3*3.14*r*r*r;
+document.getElementById("t2").value=v;
+}
+</script>

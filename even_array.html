@@ -1,0 +1,16 @@
+<script>
+var n=prompt("Enter Limit:");
+n=parseInt(n);
+var a=new Array();
+for(i=0;i<n;i++)
+{
+a[i]=prompt("Enter Number:");
+}
+document.write("Array Elements:"+a);
+document.write("<br>Even Nos:");
+for(i=0;i<n;i++)
+{
+if(a[i]%2==0)
+document.write("<br>"+a[i]);
+}
+</script>

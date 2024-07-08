@@ -1,0 +1,22 @@
+<html>
+<body>
+<form>
+Enter Limit:
+<input type="number" id="t1"><br>
+<input type="button" value="Odd-Numbers" onclick="odd()">
+</form>
+</body>
+</html>
+
+<script>
+function odd()
+{
+var n=document.getElementById("t1").value;
+n=parseInt(n);
+for(i=1;i<=n;i++)
+{
+if(i%2!=0)
+document.write("<br>"+i);
+}
+}
+</script>
